@@ -13,5 +13,10 @@ class QuestionsController{
 		echo json_encode($response);
 		return true;
 	}
+	public function actionGetQuestionsBySubjectGroup($subjectGroup){
+		$response = $this->questions->getQuestionsBySubjectGroup($subjectGroup);
+		echo json_encode($response);
+		return true;
+	}
 }
 ?>

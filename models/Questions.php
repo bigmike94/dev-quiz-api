@@ -47,5 +47,20 @@ class Questions{
 			return $this->msg($questions);
 		}
 	}
+	public function getQuestionsBySubjectGroup($subjectGroup){
+		if ($this->method==="GET") {
+			$questions = $this->conn->prepare("SELECT subj.subjects_group, q.id, q.question FROM `subject` subj INNER JOIN `questions` q ON q.subject_id = subj.id WHERE subjects_group=:subjectGroup ORDER BY rand()");
+			$questions->bindParam(':subjectGroup', $subjectGroup, PDO::PARAM_STR);
+			$questions->execute();
+			$questions = $questions->fetchAll(PDO::FETCH_ASSOC);
+			foreach($questions as &$question){
+				$answers = $this->conn->query("SELECT * FROM `answers` WHERE question_id = {$question['id']}")->fetchAll(PDO::FETCH_ASSOC);
+				foreach ($answers as $answer) {
+					$question["answers"][] = $answer["answer"];
+				}
+			}
+			return $this->msg($questions);
+		}
+	}
 }
 ?>
