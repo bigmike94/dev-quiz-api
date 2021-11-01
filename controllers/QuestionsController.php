@@ -1,22 +1,20 @@
 <?php
 class QuestionsController{
-	function __construct(){
-		$this->questions = new Questions();
-	}
-	public function actionGetAll(){
-		$response = $this->questions->getAllQuestions();
+	public static function getJsonResponse($methodName, $param=false){
+		$questions = new Questions();
+		if ($param) $response = $questions->$methodName($param);
+		else $response = $questions->$methodName();
 		echo json_encode($response);
 		return true;
 	}
-	public function actionGetBySubject($subject){
-		$response = $this->questions->getQuestionsBySubject($subject);
-		echo json_encode($response);
-		return true;
+	public function actionGetAll($page=false){
+		self::getJsonResponse("getAllQuestions", $page?$page:false);
 	}
-	public function actionGetQuestionsBySubjectGroup($subjectGroup){
-		$response = $this->questions->getQuestionsBySubjectGroup($subjectGroup);
-		echo json_encode($response);
-		return true;
+	public function actionGetBySubject($subject, $page=false){
+		self::getJsonResponse("getQuestionsBySubject", $page?array("subject"=>$subject, "page"=>$page):$subject);
+	}
+	public function actionGetQuestionsByStack($stack, $page=false){
+		self::getJsonResponse("getQuestionsByStack", $page?array("stack"=>$stack, "page"=>$page):$stack);
 	}
 }
 ?>
