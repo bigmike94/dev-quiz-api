@@ -18,7 +18,6 @@ class Questions extends QuestionAnswer{
 			else{
 				$questions = $this->conn->query("SELECT q.id, q.question, subj.name AS subject FROM `questions` q INNER JOIN `subject` subj ON q.subject_id = subj.id ORDER BY rand()")->fetchAll(PDO::FETCH_ASSOC);
 			}
-			
 			$questions_with_answers = $this->getQuestionsAnswers($questions);
 			return $this->msg($questions_with_answers);
 		}
