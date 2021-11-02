@@ -20,7 +20,7 @@
 <p>GET domain.name/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</p>
 <hr>
 <h3>Getting reponse on user's answer</h3>
-<p>POST domain.name/answers-response - <b>Pass object with key as question's id and value as users'answer</b> an get response in the form of key-value pairs where key is question's id and value is answers on question if user answered correctly
+<p>POST domain.name/answers-response - <b>Pass object with key as question's id and value as users'answer</b> and get response in the form of key-value pairs where key is question's id and value is answers on question if user answered correctly
 </p>
 <br>
 <h2>Pattern:</h2>
