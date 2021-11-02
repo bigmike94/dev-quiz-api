@@ -9,10 +9,20 @@
 <li>MySQL</li>
 </ul>
 <hr>
-<h2>Basic usage</h2>
-<div>GET domain.name/questions - <b>Getting all questions (randomized)</b></div>
-<div>GET domain.name/questions/p/1 - <b>Getting all questions per page</b> (pagination)</div>
-<div>GET domain.name/questions/php - <b>Getting questions by subject</b>. Values acceptable: html, css, javascript, php, mysql</div>
-<div>GET domain.name/questions/html/p/1 - <b>Getting questions by subject per page</b> (pagination). Values acceptable: html, css, javascript, php, mysql</div>
-<div>GET domain.name/questions/stack/backend - <b>Getting questions by stack: frontend/backend (randomized)</b>. Values acceptable: frontend, backend.</div>
-<div>GET domain.name/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</div>
+<h2>Usage</h2>
+<hr>
+<h3>Getting questions</h3>
+<p>GET domain.name/questions - <b>Getting all questions (randomized)</b></p>
+<p>GET domain.name/questions/p/1 - <b>Getting all questions per page</b> (pagination)</p>
+<p>GET domain.name/questions/php - <b>Getting questions by subject</b>. Values acceptable: html, css, javascript, php, mysql</p>
+<p>GET domain.name/questions/html/p/1 - <b>Getting questions by subject per page</b> (pagination). Values acceptable: html, css, javascript, php, mysql</p>
+<p>GET domain.name/questions/stack/backend - <b>Getting questions by stack: frontend/backend (randomized)</b>. Values acceptable: frontend, backend.</p>
+<p>GET domain.name/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</p>
+<hr>
+<h3>Getting reponse on user's answer</h3>
+<p>POST domain.name/answers-response - <b>Pass object with key as question's id and value as users'answer</b> an get response in the form of key-value pairs where key is question's id and value is answers on question if user answered correctly
+</p>
+<br>
+<h2>Pattern:</h2>
+<hr>
+<p><b>Passed:</b>{"1":"Home tool Markup Language"}.<b>Received:</b>{"1":"0"}</span></p>
