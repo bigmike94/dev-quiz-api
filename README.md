@@ -10,9 +10,9 @@
 </ul>
 <hr>
 <h2>Basic usage</h2>
-<div>GET domain.name/questions - get all questions (randomized)</div>
-<div>GET domain.name/questions/p/1 - get questions per page (pagination)</div>
-<div>GET domain.name/questions/php - get questions by subject. Values acceptable: html, css, javascript, php, mysql</div>
-<div>GET domain.name/questions/php/p/1 - get questions by subject per page (pagination). Values acceptable: html, css, javascript, php, mysql</div>
-<div>GET domain.name/questions/stack/backend - Getting questions by stack: frontend/backend (randomized). Values acceptable: frontend, backend.</div>
-<div>GET domain.name/questions/stack/frontend/p/1 - Getting questions by stack per page (pagination)</div>
+<div>GET domain.name/questions - <b>get all questions (randomized)</b></div>
+<div>GET domain.name/questions/p/1 - <b>get questions per page</b> (pagination)</div>
+<div>GET domain.name/questions/php - <b>get questions by subject</b>. Values acceptable: html, css, javascript, php, mysql</div>
+<div>GET domain.name/questions/php/p/1 - <b>get questions by subject per page</b> (pagination). Values acceptable: html, css, javascript, php, mysql</div>
+<div>GET domain.name/questions/stack/backend - <b>Getting questions by stack: frontend/backend (randomized)</b>. Values acceptable: frontend, backend.</div>
+<div>GET domain.name/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</div>
