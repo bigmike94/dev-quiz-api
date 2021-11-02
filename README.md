@@ -25,4 +25,5 @@
 <br>
 <h2>Pattern:</h2>
 <hr>
-<p><b>Passed:</b>{"1":"Home tool Markup Language"}.<b>Received:</b>{"1":"0"}</span></p>
+<p><b>Passed:</b>{"1":"Home tool Markup Language"}</p>
+<p><b>Received:</b>{"1":"0"}</p>
