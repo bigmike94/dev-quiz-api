@@ -19,7 +19,8 @@
 <p>GET domain.name/questions/stack/backend - <b>Getting questions by stack: frontend/backend (randomized)</b>. Values acceptable: frontend, backend.</p>
 <p>GET domain.name/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</p>
 <br>
-<h4>Getting reponse on user's answer</h4>
+<hr>
+<h3>Getting reponse on user's answer</h3>
 <p>POST domain.name/answers-response - <b>Pass object with key as question's id and value as users'answer</b> and get response in the form of key-value pairs where key is question's id and value is answers on question whether user answered correctly
 </p>
 <br>
