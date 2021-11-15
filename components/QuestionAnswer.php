@@ -11,7 +11,7 @@ abstract class QuestionAnswer{
 		}
 		else {
 			http_response_code(404);
-			return array ("ok"=>true,"data"=>"Oops...Nothing was found");
+			return array ("ok"=>false,"data"=>"Oops...Nothing was found");
 		}
 	}
 	public function getQuestionsAnswers($questions){
