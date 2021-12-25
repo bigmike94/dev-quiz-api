@@ -24,6 +24,6 @@
 <p>POST https://dev-quiz-api.000webhostapp.com/answers-response - <b>Pass object with key as question's id and value as users'answer</b> and get response in the form of key-value pairs where key is question's id and value is answers on question whether user answered correctly
 </p>
 <br>
-<h4>Pattern:</h4>
+<h3>Pattern:</h3>
 <p><b>Passed:</b> {"1":"Home tool Markup Language"}</p>
 <p><b>Received:</b> {"1":"0"}</p>
