@@ -20,10 +20,10 @@
 <p>GET https://dev-quiz-api.000webhostapp.com/questions/stack/frontend/p/1 - <b>Getting questions by stack per page</b> (pagination)</p>
 <br>
 <hr>
-<h3><u>Getting reponse on user's answer</u></h3>
+<h3 style='text-decoration: underline'>Getting reponse on user's answer</h3>
 <p>POST https://dev-quiz-api.000webhostapp.com/answers-response - <b>Pass object with key as question's id and value as users'answer</b> and get response in the form of key-value pairs where key is question's id and value is answers on question whether user answered correctly
 </p>
 <br>
-<h3><u>Pattern:</u></h3>
+<h3 style='text-decoration: underline'>Pattern:</h3>
 <p><b>Passed:</b> {"1":"Home tool Markup Language"}</p>
 <p><b>Received:</b> {"1":"0"}</p>
